@@ -2,9 +2,9 @@ import bpy
 import random
 from math import radians
 
-objectTextures = "C:/Users/pourmand/Documents/_mask and render/objectTextures/"
-tableTextures =  "C:/Users/pourmand/Documents/_mask and render/tableTextures/"
-HDRI_Path = "C:/Users/pourmand/Documents/_mask and render/HDRI/"
+objectTextures = "./render/objectTextures/"
+tableTextures =  "./render/tableTextures/"
+HDRI_Path = "./render/HDRI/"
 
 def init():
     bpy.ops.object.select_all(action='DESELECT')
@@ -168,6 +168,6 @@ def generate_scene(name,address):
     save_values(name,address,metallic,roughness,colorR , colorG, colorB)
     return obj
 
-#out = "C:/Users/pourmand/Documents/_mask and render/output/"
+#out = "./output/"
 #init()        
 #generate_scene("01",out)
