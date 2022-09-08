@@ -1,10 +1,10 @@
 import bpy
 import sys
-sys.path.append("C:/Users/pourmand/Documents/_mask and render/") 
+sys.path.append("./render/") 
 import sceneGenerator
 from random import uniform,randint
 
-path_out = "C:/Users/pourmand/Documents/_mask and render/output/"
+path_out = "./render/output/"
 # render settings
 
 bpy.context.scene.render.resolution_x = 256 #224
@@ -16,7 +16,7 @@ bpy.context.scene.cycles.device = "GPU"
 bpy.context.scene.cycles.use_denoising = True
 bpy.context.scene.view_settings.view_transform = 'Filmic'
 bpy.context.scene.sequencer_colorspace_settings.name = 'sRGB'
-#bpy.context.scene.render.filepath = "C:/Users/pourmand/Documents/_mask and render/output/image" + str(currentImg) + ".PNG"
+#bpy.context.scene.render.filepath = "./output/image" + str(currentImg) + ".PNG"
 
 numOfImages = 100
 sceneGenerator.init()
