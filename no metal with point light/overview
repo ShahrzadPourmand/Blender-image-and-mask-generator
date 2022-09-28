@@ -1,0 +1,2 @@
+This time we removed the metallic parameter as it is mostly suitable for mirrors. We also added a point light at a random location near the camera. 
+This is due to the fact that in some images, the object was specular, but the shininess was not visible when only HDRI lighting was used.
